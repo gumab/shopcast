@@ -8,6 +8,7 @@
         <!--Current Location-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShopCast" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -16,25 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-gX-tnw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ppQ-gX-tnw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="243-bb-7s2"/>
-                            <constraint firstAttribute="trailing" secondItem="ppQ-gX-tnw" secondAttribute="trailing" id="OWo-a6-4QO"/>
-                            <constraint firstItem="ppQ-gX-tnw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gii-0D-KEZ"/>
-                            <constraint firstItem="ppQ-gX-tnw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oM5-Ts-KAs"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Current Location" id="BDc-go-pzF"/>
-                    <connections>
-                        <outlet property="mapView" destination="ppQ-gX-tnw" id="QKN-lQ-4CL"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377" y="336"/>
         </scene>
