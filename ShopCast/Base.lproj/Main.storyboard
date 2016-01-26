@@ -5,10 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Current Location-->
+        <!--Swipe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShopCast" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -17,10 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZH-7c-joy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sZH-7c-joy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GpZ-uW-FXx"/>
+                            <constraint firstItem="sZH-7c-joy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YRW-4R-V4k"/>
+                            <constraint firstAttribute="trailing" secondItem="sZH-7c-joy" secondAttribute="trailing" id="mBS-jM-6al"/>
+                            <constraint firstItem="sZH-7c-joy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ytg-bG-RM6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Current Location" id="BDc-go-pzF"/>
+                    <navigationItem key="navigationItem" title="Swipe" id="BDc-go-pzF"/>
+                    <connections>
+                        <outlet property="scrollView" destination="sZH-7c-joy" id="otm-38-hzm"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377" y="336"/>
         </scene>
