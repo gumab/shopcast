@@ -12,19 +12,23 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var topView: UIView!
     
-    @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var titleImage: UIImageView!
-    
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
     @IBOutlet weak var imageView1: UIImageView!
     
+    var userName:String = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        //self.titleImage.layer.cornerRadius = 20
+        
+        //self.titleNameButton.titleLabel?.text = self.userName
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -32,5 +36,4 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
